@@ -7,7 +7,7 @@ spec:
   type: LoadBalancer
   selector:
     app: demo-app
-    release: v2
+    release: v1
   ports:
     - protocol: TCP
       port: 80
