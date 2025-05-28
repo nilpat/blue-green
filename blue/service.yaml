@@ -4,7 +4,7 @@ metadata:
   name: demo-app-blue
   namespace: default
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: demo-app
     release: v1
