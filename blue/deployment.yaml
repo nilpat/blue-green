@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-app-blue
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: demo-app
+      release: v1
+  template:
+    metadata:
+      labels:
+        app: demo-app
+        release: v1
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:alpine
+          ports:
+            - containerPort: 80
