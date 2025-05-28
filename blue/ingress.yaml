@@ -8,18 +8,18 @@ spec:
   rules:
   - http:
         paths:
-        - path: /blue
+        - path: /
           pathType: Prefix
           backend:
             service:
                 name: demo-app-blue
                 port:
                   number: 80
-        - path: /green
-          pathType: Prefix
-          backend:
-            service:
-                name: demo-app-green
-                port:
-                  number: 80          
+        # - path: /green
+        #   pathType: Prefix
+        #   backend:
+        #     service:
+        #         name: demo-app-green
+        #         port:
+        #           number: 80          
                     
