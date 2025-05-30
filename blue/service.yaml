@@ -7,7 +7,7 @@ spec:
   type: ClusterIP
   selector:
     app: demo-app
-    release: v1
+    release: v2
   ports:
     - protocol: TCP
       port: 80
