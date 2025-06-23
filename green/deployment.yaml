@@ -16,7 +16,7 @@ spec:
         release: v2
     spec:
       containers:
-        - name: nginx
+        - name: httpd
           image: httpd:alpine
           ports:
             - containerPort: 80
